@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Universal printable Solar Calendar</title>
+    <style>
+        table {
+            border: 0;
+            width: 100%;
+        }
+        th {
+            width: 14%;
+            background-color: #ddd;
+            text-align: center;
+            color: #999;
+        }
+        td.empty {
+            background-color: #ddd;
+        }
+        .number {
+            font-size: 2em;
+        }
+        .label {
+            color: #999;
+        }
+        .sunday {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    Lat: <input name="lat" value="41.23"></input> Lon: <input name="lon" value="2.11"></input> <br/>
+    Month: <select name="month">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option selected>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+    Year: <input name="year" value="2014"></input>
+    <input type="submit" value="Show calendar"></input>
+    <hr/>
+    <table>
+        <thead>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="empty">&nbsp;</td>
+                <td><span class="number">1</span> DST<br/><span class="label">Sunrise</span></span><br/>7:16 AM<br/><span class="label">Sunset</span><br/>8:27 PM</td>
+                <td><span class="number">2</span> DST<br/><span class="label">Sunrise</span></span><br/>7:17 AM<br/><span class="label">Sunset</span><br/>8:25 PM</td>
+                <td><span class="number">3</span> DST<br/><span class="label">Sunrise</span></span><br/>7:18 AM<br/><span class="label">Sunset</span><br/>8:23 PM</td>
+                <td><span class="number">4</span> DST<br/><span class="label">Sunrise</span></span><br/>7:19 AM<br/><span class="label">Sunset</span><br/>8:22 PM</td>
+                <td><span class="number">5</span> DST<br/><span class="label">Sunrise</span></span><br/>7:20 AM<br/><span class="label">Sunset</span><br/>8:20 PM</td>
+                <td><span class="number">6</span> DST<br/><span class="label">Sunrise</span></span><br/>7:21 AM<br/><span class="label">Sunset</span><br/>8:18 PM</td>
+            </tr>
+            <tr>
+                <td><span class="number sunday">7</span> DST<br/><span class="label">Sunrise</span><br/>7:22 AM<br/><span class="label">Sunset</span><br/>8:17 PM</td>
+                <td><span class="number">8</span> DST<br/><span class="label">Sunrise</span><br/>7:23 AM<br/><span class="label">Sunset</span><br/>8:15 PM</td>
+                <td><span class="number">9</span> DST<br/><span class="label">Sunrise</span><br/>7:24 AM<br/><span class="label">Sunset</span><br/>8:13 PM</td>
+                <td><span class="number">10</span> DST<br/><span class="label">Sunrise</span><br/>7:25 AM<br/><span class="label">Sunset</span><br/>8:12 PM</td>
+                <td><span class="number">11</span> DST<br/><span class="label">Sunrise</span><br/>7:26 AM<br/><span class="label">Sunset</span><br/>8:10 PM</td>
+                <td><span class="number">12</span> DST<br/><span class="label">Sunrise</span><br/>7:27 AM<br/><span class="label">Sunset</span><br/>8:08 PM</td>
+                <td><span class="number">13</span> DST<br/><span class="label">Sunrise</span><br/>7:28 AM<br/><span class="label">Sunset</span><br/>8:07 PM</td>
+            </tr>
+            <tr>
+                <td><span class="number sunday">14</span> DST<br/><span class="label">Sunrise</span><br/>7:29 AM<br/><span class="label">Sunset</span><br/>8:05 PM</td>
+                <td><span class="number">15</span> DST<br/><span class="label">Sunrise</span><br/>7:30 AM<br/><span class="label">Sunset</span><br/>8:03 PM</td>
+                <td><span class="number">16</span> DST<br/><span class="label">Sunrise</span><br/>7:31 AM<br/><span class="label">Sunset</span><br/>8:01 PM</td>
+                <td><span class="number">17</span> DST<br/><span class="label">Sunrise</span><br/>7:32 AM<br/><span class="label">Sunset</span><br/>8:00 PM</td>
+                <td><span class="number">18</span> DST<br/><span class="label">Sunrise</span><br/>7:33 AM<br/><span class="label">Sunset</span><br/>7:58 PM</td>
+                <td><span class="number">19</span> DST<br/><span class="label">Sunrise</span><br/>7:34 AM<br/><span class="label">Sunset</span><br/>7:56 PM</td>
+                <td><span class="number">20</span> DST<br/><span class="label">Sunrise</span><br/>7:35 AM<br/><span class="label">Sunset</span><br/>7:54 PM</td>
+            </tr>
+            <tr>
+                <td><span class="number sunday">21</span> DST<br/><span class="label">Sunrise</span><br/>7:36 AM<br/><span class="label">Sunset</span><br/>7:53 PM</td>
+                <td><span class="number">22</span> DST<br/><span class="label">Sunrise</span><br/>7:37 AM<br/><span class="label">Sunset</span><br/>7:51 PM</td>
+                <td><span class="number">23</span> DST<br/><span class="label">Sunrise</span><br/>7:38 AM<br/><span class="label">Sunset</span><br/>7:49 PM</td>
+                <td><span class="number">24</span> DST<br/><span class="label">Sunrise</span><br/>7:39 AM<br/><span class="label">Sunset</span><br/>7:48 PM</td>
+                <td><span class="number">25</span> DST<br/><span class="label">Sunrise</span><br/>7:40 AM<br/><span class="label">Sunset</span><br/>7:46 PM</td>
+                <td><span class="number">26</span> DST<br/><span class="label">Sunrise</span><br/>7:41 AM<br/><span class="label">Sunset</span><br/>7:44 PM</td>
+                <td><span class="number">27</span> DST<br/><span class="label">Sunrise</span><br/>7:42 AM<br/><span class="label">Sunset</span><br/>7:42 PM</td>
+            </tr>
+            <tr>
+                <td><span class="number sunday">28</span> DST<br/><span class="label">Sunrise</span><br/>7:43 AM<br/><span class="label">Sunset</span><br/>7:41 PM</td>
+                <td><span class="number">29</span> DST<br/><span class="label">Sunrise</span><br/>7:44 AM<br/><span class="label">Sunset</span><br/>7:39 PM</td>
+                <td><span class="number">30</span> DST<br/><span class="label">Sunrise</span><br/>7:45 AM<br/><span class="label">Sunset</span><br/>7:37 PM</td>
+                <td class="empty">&nbsp;</td>
+                <td class="empty">&nbsp;</td>
+                <td class="empty">&nbsp;</td>
+                <td class="empty">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
