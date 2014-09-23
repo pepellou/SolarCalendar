@@ -1,0 +1,22 @@
+table {
+    border: 0;
+    width: 100%;
+}
+th {
+    width: 14%;
+    background-color: #ddd;
+    text-align: center;
+    color: #999;
+}
+td.empty {
+    background-color: #ddd;
+}
+.number {
+    font-size: 2em;
+}
+.label {
+    color: #999;
+}
+.sunday {
+    color: red;
+}
