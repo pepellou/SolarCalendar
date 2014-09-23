@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Universal printable Solar Calendar</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/ICanHaz.min.js"></script>
     <style>
         table {
             border: 0;
@@ -26,6 +28,25 @@
             color: red;
         }
     </style>
+    <script id="header" type="text/html">
+        {{#days}}
+            <th>{{name}}</th>
+        {{/days}}
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            var daysOfWeek = [
+                { name: 'Sunday' },
+                { name: 'Monday' },
+                { name: 'Tuesday' },
+                { name: 'Wednesday' },
+                { name: 'Thursday' },
+                { name: 'Friday' },
+                { name: 'Saturday' }
+            ];
+            $('thead tr').html(ich.header({ days: daysOfWeek }));
+        });
+    </script>
 </head>
 <body>
     Lat: <input name="lat" value="41.23"></input> Lon: <input name="lon" value="2.11"></input> <br/>
@@ -48,15 +69,7 @@
     <hr/>
     <table>
         <thead>
-            <tr>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
+            <tr></tr>
         </thead>
         <tbody>
             <tr>
