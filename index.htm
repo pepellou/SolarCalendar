@@ -4,7 +4,10 @@
     <title>Universal printable Solar Calendar</title>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/ICanHaz.min.js"></script>
-    <link href="css/showcase.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/showcase.css"
+        media="screen"
+        rel="stylesheet"
+        type="text/css" >
     <style>
     </style>
     <script id="header" type="text/html">
@@ -14,19 +17,27 @@
     </script>
     <script id="combo" type="text/html">
         {{#values}}
-            <option {{#selected}}selected{{/selected}}>{{name}}</option>
+            <option {{#selected}}selected{{/selected}}>
+                {{name}}
+            </option>
         {{/values}}
     </script>
-    <script language="javascript" src="js/Calendar.js"></script>
+    <script language="javascript" src="js/Calendar.js">
+    </script>
     <script type="text/javascript">
         $(function() {
-            $('thead tr').html(ich.header({ days: DayOfWeek.all() }));
-            $('select[name="month"]').html(ich.combo({ values: Month.all() }));
+            $('thead tr').html(ich.header({
+                days: DayOfWeek.all()
+            }));
+            $('select[name="month"]').html(ich.combo({
+                values: Month.all()
+            }));
         });
     </script>
 </head>
 <body>
-    Lat: <input name="lat" value="41.23"></input> Lon: <input name="lon" value="2.11"></input> <br/>
+    Lat: <input name="lat" value="41.23"></input>
+    Lon: <input name="lon" value="2.11"></input> <br/>
     Month: <select name="month"></select>
     Year: <input name="year" value="2014"></input>
     <input type="submit" value="Show calendar"></input>
